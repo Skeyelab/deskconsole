@@ -9,14 +9,9 @@ d = ask "Domain: "
 u = ask "Username: "
 p = ask "Password: "
 
-
 DeskApi.configure do |config|
-  # basic authentication
   config.username = u
   config.password = p
-
-  # oauth configuration
-
   config.endpoint = "https://#{d}.desk.com"
 end
 
